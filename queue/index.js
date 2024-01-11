@@ -7,11 +7,11 @@ class Queue {
     }
     dequeue() {
         if (this.isEmpty()) return null;
-        return this.data.pop();
+        return this.data.shift();
     }
     peek() {
         if (this.isEmpty()) return null;
-        return this.data[this.data.length - 1]
+        return this.data[0];
     }
     size() {
         return this.data.length;
